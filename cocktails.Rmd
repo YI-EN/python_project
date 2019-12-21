@@ -96,6 +96,33 @@ table <- as_tibble(table)
 table[(table$cocktails_name == "Admiral Benbow"), ]
 
 ```
+```{r}
+library(httr)
+library(xml2)
+library(rvest)
 
 
 
+req <- GET("https://www.socialandcocktail.co.uk",
+                    path = "alcohol")
+req[["url"]]
+req[["status_code"]]
+html <- content(req)
+
+liquor_name <- html %>% html_nodes("ul.open-chooser > li > a") %>% html_text()
+liquor_name
+
+alcohol_content <- vector("numeric", length = 259)
+
+liquor_table <- data_frame(liquor_names = liquor_name, alcohol_contents = alcohol_content)
+liquor_table
+
+write.csv(liquor_table, file = "liquor_table.csv", row.names = F, na = " ", sep = ",")
+```
+
+```{r}
+fh1 <- read.csv("liquor_table.csv")
+fh1
+
+
+```
