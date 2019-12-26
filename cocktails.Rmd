@@ -93,7 +93,7 @@ table <- as_tibble(table)
 ```
 
 ```{r}
-table[(table$cocktails_name == "Admiral Benbow"), ]
+table[(table$ingredient_1 == "Jagermeister"), ]
 
 ```
 ```{r}

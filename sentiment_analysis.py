@@ -1,5 +1,11 @@
 # #coding:UTF-8
 from snownlp import SnowNLP
+from snownlp import sentiment
+
+sentiment.train('../../../../iansu/opt/anaconda3/lib/python3.7/site-packages/snownlp/sentiment/neg.txt',
+				'../../../../iansu/opt/anaconda3/lib/python3.7/site-packages/snownlp/sentiment/pos.txt')
+sentiment.save('sentiment.marshal')
+
 
 # f = open("neg.txt", "r", encoding="utf-8")
 
@@ -15,15 +21,15 @@ from snownlp import SnowNLP
 
 
 
-text = input()
+# text = input()
 
-s = SnowNLP(text)
+# s = SnowNLP(text)
 
-for sentence in s.sentences:
-	print(sentence)
+# for sentence in s.sentences:
+# 	print(sentence)
 
-print(s.sentiments)
-print(s.words)
+# print(s.sentiments)
+# print(s.words)
 
 
 # #coding:UTF-8
