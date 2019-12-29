@@ -1,9 +1,10 @@
-# #coding:UTF-8
+#coding:UTF-8
+import sys
 from snownlp import SnowNLP
 from snownlp import sentiment
 
-sentiment.train('../../../../iansu/opt/anaconda3/lib/python3.7/site-packages/snownlp/sentiment/neg.txt',
-				'../../../../iansu/opt/anaconda3/lib/python3.7/site-packages/snownlp/sentiment/pos.txt')
+sentiment.train('./crawler/formal_dcard_neg.txt',
+				'./crawler/formal_dcard_pos.txt')
 sentiment.save('sentiment.marshal')
 
 
@@ -21,7 +22,7 @@ sentiment.save('sentiment.marshal')
 
 
 
-# text = input()
+# text = u"我,我"
 
 # s = SnowNLP(text)
 
