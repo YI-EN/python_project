@@ -3,9 +3,9 @@ import sys
 from snownlp import SnowNLP
 from snownlp import sentiment
 
-sentiment.train('./crawler/formal_dcard_neg.txt',
-				'./crawler/formal_dcard_pos.txt')
-sentiment.save('sentiment.marshal')
+# sentiment.train('./crawler/formal_dcard_neg.txt',
+# 				'./crawler/formal_dcard_pos.txt')
+# sentiment.save('sentiment.marshal')
 
 
 # f = open("neg.txt", "r", encoding="utf-8")
@@ -22,15 +22,15 @@ sentiment.save('sentiment.marshal')
 
 
 
-# text = u"我,我"
+text = u"氣氛開始轉換，突然一股溫熱從我耳後散開。"
 
-# s = SnowNLP(text)
+s = SnowNLP(text)
 
-# for sentence in s.sentences:
-# 	print(sentence)
+for sentence in s.sentences:
+	print(sentence)
 
-# print(s.sentiments)
-# print(s.words)
+print(s.sentiments)
+print(s.words)
 
 
 # #coding:UTF-8
