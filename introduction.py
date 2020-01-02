@@ -1,55 +1,18 @@
 # -*- coding: utf-8 -*-
-import requests  # 對dcard爬文
-import json  # 以api形式處理文章
+import requests  # 對dcard爬文(api)
+import json  # 以json形式處理文章
 import re  # 處理正規表達式
 import emoji  # 處理現代網路文章表情符號過多，可能影響判讀的因素
+import time  # 延遲爬取文章，因dcard會阻止使用者連續爬取
 
 header = {
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'
 }
 
-'''
-Neg topics : 心累了(2997)、壓力(4763)、憂鬱(462)、鬱悶(26)、自私(157)、騙子(60).共 8365 篇
- 			   forum: 心情(mood)、感情(relationship)、閒聊(talk)
- 			  補：絕望、放棄
-'''
-
-'''
-心情版(mood):
-		12/27 15:38 232770428（自己創業真的好嗎）
-感情版(relationship):
-		12/27 15:37 232770397（就算是渣女-有一天也會付出代價）
-閒聊版(talk):
-		12/27 15:36 232770383（低卡審查帳號的方法）
-'''
-
-# def check_topics(reqjson, idlist):
-# '''
-# 新增: 絕望、放棄 兩詞
-# '''
-# 	for article in reqjson:
-# 		oldlist = ["心累了", "壓力", "憂鬱", "鬱悶", "自私", "騙子"]
-# 		newlist = ["絕望", "放棄"]
-# 		for want in newlist:
-# 			topics = article["topics"]  # 會是一個list，若沒有則為空list
-# 			if want in topics:
-# 				for forgo in oldlist:
-# 					if forgo in topics:
-# 						break
-# 					else:
-# 						idlist.append(article["id"])  # 紀錄id，以便等等爬正文
-# 						# print(article["title"])
-# 						break  # 如果有找到了就不要繼續看，趕快檢查下一篇
-# 				break
-# 			else:
-# 				pass
-# 	return idlist
-
 def check_topics(reqjson, idlist):
-'''
-檢查文章內是否具有我們要的標籤，有則將文章id計入list中，以便下載內文
-'''
-
+	'''
+	檢查文章內是否具有我們要的標籤，有則將文章id計入list中，以便下載內文
+	'''
 	for article in reqjson:
 		for keyword in ["心累了", "壓力", "憂鬱", "鬱悶", "自私", "騙子"]:
 			topics = article["topics"]  # 會是一個list，若沒有則為空list
@@ -59,12 +22,12 @@ def check_topics(reqjson, idlist):
 	return idlist
 
 def crawl_article(lastid, forum, idlist, number):
-'''
-運用check_topics函數搜集的列表搜集內文。dcard的api設定每次只能爬取30篇，
-因此將最後一篇文章的id存為lastid，當作爬取下一輪的第一個id（運用api url 中的參數before）
-'''
+	'''
+	運用check_topics函數搜集的列表搜集內文。dcard的api設定每次只能爬取30篇，
+	因此將最後一篇文章的id存為lastid，當作爬取下一輪的第一個id（運用api url 中的參數before）
+	'''
 	url = "https://www.dcard.tw/_api/forums/" + forum
-	url += "/posts?popular=false&before=" + str(lastid)  # 現在從他下一篇開始爬
+	url += "/posts?popular=false&before=" + str(lastid)
 	req = requests.get(url, headers=header)
 	print(req.status_code)
 	
@@ -74,19 +37,27 @@ def crawl_article(lastid, forum, idlist, number):
 
 	# 用來限制文章的爬取數量（因為dcard會阻止用戶連續爬取）
 	number -= 1  # 每爬一頁（30個文章）就減一
-	newlastid = newjson[-1]["id"]  # 這是前三十個爬文中最後一篇的id
-	if number == 0:
-		print("finish")
-		print("last ID is : " + str(newlastid))  # number 的第 62 次發現 logical bug，故修正
+	newlastid = newjson[-1]["id"]  # 這是前三十個爬文中最後一篇的id，這個id將會被當作爬取下一輪的第一個id（運用api url 中的參數before）
+	
+	if len(idlist) >= 500:  # 每取得300篇文章就結束
 		return None
 	else:
-		crawl_article(newlastid, forum, newlist, number)  # 如果還沒爬完指定的數量，就繼續爬，形成迴圈
+		if number == 0:
+			# 每爬完30 * number篇文章，休息60秒，再繼續爬
+			time.sleep(60)
+			number = 100
+			crawl_article(newlastid, forum, newlist, number)
+		else:
+			# 如果還沒爬完number指定的數量，便不間斷地持續爬取，直到number歸0為止
+			crawl_article(newlastid, forum, newlist, number)
 
-# 爬心情版(mood)/感情版(relationshop)/閒聊版(talk)
+
+# 爬心情版(mood)/感情版(relationship)/閒聊版(talk)
+# 會依據爬取的狀況更改各項數值
 idlist = []
 forum = "mood"
-number = 200  # 手動自訂，每次會爬(30 * number)篇
-crawl_article(225831060, forum, idlist, number)  # 手動更改id
+number = 100  # 每次會爬(30 * number)篇(3000篇)
+crawl_article(232770428, forum, idlist, number)
 print(idlist)
 print(len(idlist))
 
@@ -94,7 +65,8 @@ print(len(idlist))
 with open("dcard_neg.txt", "a", encoding="utf-8") as fh1:
 '''
 利用爬取的idlist（符合規定的文章id），抓取文章內文，分兩次做（記id與抓內文）的原因
-是因為兩者所需的url格式不同。抓下內文後，將其寫入至一個txt檔中
+是因為兩者所需的url格式不同。抓下內文後，經過regex的處理去掉不要的網址、emoji等後
+將其寫入至一個txt檔中
 '''
 	for Id in idlist:
 		url = "https://www.dcard.tw/_api/posts/" + str(Id)
@@ -133,3 +105,13 @@ with open("dcard_neg.txt", "a", encoding="utf-8") as fh1:
 		fh1.write("\n")  # 一篇文章結束後記得換行
 		# fh1.write("================")
 	fh1.close()
+
+# 進行情緒文本訓練
+import sys
+from snownlp import SnowNLP
+from snownlp import sentiment
+
+sentiment.train('neg.txt',
+				'pos.txt')
+sentiment.save('sentiment.marshal')
+

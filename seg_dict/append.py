@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
-# def append_text(inputtext, outputtext):
-# 	fh1 = open(inputtext, "r", encoding="utf-8")
-# 	fh2 = open(outputtext, "a", encoding="utf-8")
-# 	fh = fh1.readlines()
-# 	for line in fh:
-# 		fh2.write(line)
-# 	fh1.close()
-# 	fh2.close()
 
-# append_text("dict.txt", "data.txt")
+# 將處理好的字典加入原有的斷詞字典中
+def append_text(inputtext, outputtext):
+	fh1 = open(inputtext, "r", encoding="utf-8")
+	fh2 = open(outputtext, "a", encoding="utf-8")
+	fh = fh1.readlines()
+	for line in fh:
+		fh2.write(line)
+	fh1.close()
+	fh2.close()
+
+append_text("dict.txt", "data.txt")
 
 
 '''

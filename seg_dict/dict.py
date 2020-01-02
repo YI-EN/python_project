@@ -14,6 +14,8 @@ seg.train('data1.txt')
 參考網址：https://www.itread01.com/content/1544379321.html
 '''
 
+# senti_dict.csv是一個由台大語言所助教所提供的斷詞庫，內含44720個詞彙
+# 現依據snownlp的斷詞訓練樣本規則，senti_dict.csv調整成可用的模式
 csvfile = open("senti_dict.csv", "r")
 rows = csv.DictReader(csvfile)
 

@@ -93,7 +93,7 @@ table <- as_tibble(table)
 ```
 
 ```{r}
-table[(table$ingredient_1 == "Jagermeister"), ]
+table %>% filter()
 
 ```
 ```{r}

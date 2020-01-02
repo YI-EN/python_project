@@ -63,7 +63,7 @@ def split_ingredient_by_plural(unit, base):
 		except ValueError:
 			if "/" in amount_str[0]:
 				num = int(amount_str[0].split("/")[0])
-				den = int(amount_str[0].split("/")[0])
+				den = int(amount_str[0].split("/")[1])
 				amount = float(num / den)
 			else:
 				amount = "several"
@@ -95,7 +95,6 @@ def split_ingredient_by_single(unit,base):
 	liquid_name_and_amount = [liquid_name, str(amount) + "(" + unit + ")"]
 
 	return liquid_name_and_amount	
-
 
 # 準備結構化資料
 adjusted_ingredient_lists = []
@@ -157,6 +156,64 @@ for ingredient_list in ingredient_lists:  # 調酒
 			unit = "bottle"
 			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
 			liquid_name_and_amount[1] += "(bottle)"
+
+		elif "splashes" in base:
+			unit = "splashes"
+			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+			liquid_name_and_amount[1] += "(splash)"
+
+		elif "splash" in base:
+			unit = "splash"
+			liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+		elif "tablespoons" in base:
+			unit = "tablespoons"
+			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+			liquid_name_and_amount[1] += "(tablespoon)"
+
+		elif "tablespoon" in base:
+			unit = "tablespoon"
+			liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+		elif "shots" in base:
+			unit = "shots"
+			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+			liquid_name_and_amount[1] += "(shot)"
+
+		elif "shot" in base:
+			unit = "shot"
+			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+			liquid_name_and_amount[1] += "(shot)"
+
+		elif "shot" in base:
+			unit = "shot"
+			liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+		elif "bar spoons" in base:
+			unit = "bar spoons"
+			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+			liquid_name_and_amount[1] += "(bar spoon)"
+
+		elif "bar spoon" in base:
+			unit = "bar spoon"
+			liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+		elif "cans" in base:
+			unit = "cans"
+			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+			liquid_name_and_amount[1] += "(can)"
+
+		elif "can" in base:
+			unit = "can"
+			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+			liquid_name_and_amount[1] += "(can)"
+
+		elif "can" in base:
+			unit = "can"
+			liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+
+
 
 		# elif match != None:
   #  			items = match.groups()
@@ -257,6 +314,11 @@ for page in range(2, 37):
 				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
 				liquid_name_and_amount[1] += "(teaspoon)"
 
+			elif "Teaspoon" in base:
+				unit = "Teaspoon"
+				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+				liquid_name_and_amount[1] += "(teaspoon)"
+
 			elif "teaspoon" in base:
 				unit = "teaspoon"
 				liquid_name_and_amount = split_ingredient_by_single(unit, base)
@@ -280,7 +342,61 @@ for page in range(2, 37):
 				unit = "bottle"
 				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
 				liquid_name_and_amount[1] += "(bottle)"
+			
+			elif "splashes" in base:
+				unit = "splashes"
+				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+				liquid_name_and_amount[1] += "(splash)"
 
+			elif "splash" in base:
+				unit = "splash"
+				liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+			elif "tablespoons" in base:
+				unit = "tablespoons"
+				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+				liquid_name_and_amount[1] += "(tablespoon)"
+
+			elif "tablespoon" in base:
+				unit = "tablespoon"
+				liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+			elif "shots" in base:
+				unit = "shots"
+				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+				liquid_name_and_amount[1] += "(shot)"
+
+			elif "shot" in base:
+				unit = "shot"
+				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+				liquid_name_and_amount[1] += "(shot)"
+
+			elif "shot" in base:
+				unit = "shot"
+				liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+			elif "bar spoons" in base:
+				unit = "bar spoons"
+				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+				liquid_name_and_amount[1] += "(bar spoon)"
+
+			elif "bars poon" in base:
+				unit = "bar spoon"
+				liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+			elif "cans" in base:
+				unit = "cans"
+				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+				liquid_name_and_amount[1] += "(can)"
+
+			elif "can" in base:
+				unit = "can"
+				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+				liquid_name_and_amount[1] += "(can)"
+
+			elif "can" in base:
+				unit = "can"
+				liquid_name_and_amount = split_ingredient_by_single(unit, base)
 			# elif match != None:
    # 				items = match.groups()
    # 				liquid_name = items[1].strip()
@@ -307,4 +423,55 @@ for page in range(2, 37):
 			print(ingredient_str)
 			fh1.write(names[i] + ingredient_str + "\n")
 		fh1.close()
+
+
+
+#======================================================================================
+# def split_ingredient_by_plural(unit, base):
+# 	base = base.split(unit)
+# 	amount_str = base[0].strip().split(" ")
+
+# 	amount = 0
+# 	if len(amount_str) == 1:
+# 		try:
+# 			amount = float(amount_str[0])
+# 		except ValueError:
+# 			if "/" in amount_str[0]:
+# 				num = int(amount_str[0].split("/")[0])
+# 				den = int(amount_str[0].split("/")[1])
+# 				amount = float(num / den)
+# 			else:
+# 				amount = "several"
+# 	elif len(amount_str) == 2:
+# 		amount = float(amount_str[0]) + 0.5
+	
+# 	if "of " in base[1].strip():
+# 		liquid_name = base[1].strip()
+# 		liquid_name = liquid_name[3: ]
+# 	else:
+# 		liquid_name = base[1].strip()
+	
+# 	liquid_name_and_amount = [liquid_name, str(amount)]
+
+# 	return liquid_name_and_amount
+
+
+# def split_ingredient_by_single(unit,base):
+	
+# 	base = base.split(unit)
+# 	amount = 1.0
+
+# 	if "of " in base[1].strip():
+# 		liquid_name = base[1].strip()
+# 		liquid_name = liquid_name[3: ]
+# 	else:
+# 		liquid_name = base[1].strip()
+	
+# 	liquid_name_and_amount = [liquid_name, str(amount) + "(" + unit + ")"]
+
+# 	return liquid_name_and_amount
+
+# base = "1/2 cup sugar"
+# unit = "cup"
+# print(split_ingredient_by_plural(unit, base))
 
