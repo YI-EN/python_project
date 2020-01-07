@@ -42,7 +42,7 @@ Apocalypse Now,Dry Vermouth:10.0,Irish Cream Liqueur:10.0,Tequila:10.0
 Apple Cin,Apple Vodka:30.0,Spiced Rum:20.0,Cranberry Juice:25.0,Simple Syrup:12.5,Cinnamon
 Apple Sour,Bourbon Whiskey:37.5,Triple Sec:20.0,Apple Juice:30.0,Lemon Juice:5.0,Orange Bitters:2.0(dash)
 Appletini,Vodka:40.0,Apple Schapps:15.0,Triple Sec:15.0,Apple Slice
-Apricot Champagne Sangria,1 Bottle Champagne,Apricot Brandy:25.0,2 diced Apricots,Sugar:0.25(cup)
+Apricot Champagne Sangria,Champagne:1.0(bottle),Apricot Brandy:25.0,2 diced Apricots,Sugar:0.25(cup)
 Apricot Fizz,Bourbon Whiskey:25.0,Apricot Brandy:25.0,Lemon Juice:37.5,Old Fashioned Bitters:3.0(dash),Top-Up Lemonade
 Apricot Martini,Vodka:37.5,Apricot Brandy:20.0,Lemon Juice:25.0,Angostura Bitters:1.0(dash),Simple Syrup:12.5,Lemon Zest
 Apricot Sour,Bourbon Whiskey:37.5,Apricot Brandy:12.5,Apple Juice:25.0,Lemon Juice:20.0,2 spoons Apricot Jam
@@ -149,7 +149,7 @@ Bloody LeRoy,Vodka:45.0,Barbecue Sauce:90.0,Lemon Juice:15.0,Tabasco Sauce:1.0(d
 Bloody Margaret,Gin:45.0,Tomato Juice:90.0,Lemon Juice:15.0,Tabasco Sauce:1.0(dash),Worcestershire Sauce:2.0(dash),Salt:1.0(dash),Pepper:1.0(dash),Celery Stalk
 Bloody Maria,Tequila:45.0,Tomato Juice:90.0,Lemon Juice:15.0,Tabasco Sauce:1.0(dash),Worcestershire Sauce:2.0(dash),Salt:1.0(dash),Pepper:1.0(dash),Celery Stalk
 Bloody Mariyaki,Vodka:45.0,Tomato Juice:90.0,Lemon Juice:15.0,Tabasco Sauce:1.0(dash),Teriyaki Sauce:2.0(dash),Salt:1.0(dash),Pepper:1.0(dash),Celery Stalk
-Bloody Mary,Peppered Vodka:37.5,Sweet Vermouth:15.0,Tomato Juice:35.0,Red Wine:1.0(splash),Worcestershire sauce:6.0(splash),Tobasco sauce:10.0(dash),Lemon Juice:25.0,Salt:10.0(dash),Pepper:10.0(dash),3 Cucumber slices
+Bloody Mary,Peppered Vodka:37.5,Sweet Vermouth:15.0,Tomato Juice:35.0,Red Wine:1.0(splash),es Worcestershire sauce:1.0(splash),Tobasco sauce:10.0(dash),Lemon Juice:25.0,Salt:10.0(dash),Pepper:10.0(dash),3 Cucumber slices
 Bloody Molly,Irish Whiskey:45.0,Tomato Juice:90.0,Lemon Juice:15.0,Tabasco Sauce:1.0(dash),Worcestershire Sauce:2.0(dash),Salt:1.0(dash),Pepper:1.0(dash),Celery Stalk
 Bloody Ninja,Sake:45.0,Tomato Juice:90.0,Lemon Juice:15.0,Tabasco Sauce:1.0(dash),Worcestershire Sauce:2.0(dash),Salt:1.0(dash),Pepper:1.0(dash),Celery Stalk
 Bloody Pari,Arak:45.0,Tomato Juice:90.0,Lemon Juice:15.0,Tabasco Sauce:1.0(dash),Worcestershire Sauce:2.0(dash),Salt:1.0(dash),Pepper:1.0(dash),Celery Stalk
@@ -190,7 +190,7 @@ Brave Bull,Blanco Tequila:50.0,Coffee Liqueur:25.0
 Brazilian Sangria,Absinthe:12.5,Cachaca:30.0,Spainish Brandy:12.5,Orange Liqueur:12.5,Red Wine:25.0,Strawberry,Lime,Orange ,Kiwi ,Passionfruit
 Breakfast Martini,Gin:45.0,Triple Sec:20.0,Lemon Juice:20.0,Sugar Syrup:12.5,1 heaped spoon of Orange Marmalade,flamed lemon zest
 Breath of Fresh Air,Vodka:25.0,Peppermint Liqueur:50.0,Mint Leaf
-Broad Stripes and Bright Stars,Absinthe:5.0,Blueberry Vodka:25.0,Simple Syrup:5.0,Lemon Juice:1.0(splash),drizzle of Raspberry Liqueur,Ginger Beer,Blueberries
+Broad Stripes and Bright Stars,Absinthe:5.0,Blueberry Vodka:25.0,Simple Syrup:5.0,Lemon Juice:1.0(splash),Raspberry Liqueur:1.0(drizzle),Ginger Beer,Blueberries
 Broken Heart Martini,Vodka:65.0,Crème de Cacao:12.5,Cocoa Powder:1.0(tablespoon),Sugar:1.0(teaspoon),Orange Slice
 Bronx,Gin:50.0,Sweet Red Vermouth:12.5,Dry Vermouth:12.5,Fresh Orange Juice:25.0,Orange Zest Twist,Maraschino Cherry
 Brotherly Love,Gin:37.5,Licor 43:20.0,Simple Syrup:20.0,Steamed Milk:100.0,Nutmeg
@@ -230,7 +230,7 @@ Caribou Lou,151 Proof Rum:37.5,Coconut Rum:25.0,Pineapple Juice:125.0
 Caruso,Gin:25.0,Dry Vermouth:25.0,Green Crème de Menthe:1.0(dash)
 Catalina Margarita,Tequila:37.5,Peach Schnapps:25.0,Blue Curacao:25.0,Sour Mix:12.5
 Chalino Special,Tequila:65.0,Black Raspberry Liqueur:5.0,Lime Juice:12.5,Lemon Juice:12.5,Sugar Syrup:5.0
-Champagne Cocktail,Champagne:100.0,Brandy:25.0,1 heaped bar spoon Sugar,Angostura Bitters:4.0(dash)
+Champagne Cocktail,Champagne:100.0,Brandy:25.0,Sugar:1.0(bar spoon),Angostura Bitters:4.0(dash)
 Champagne Fizz,Gin:50.0,Lemon Juice:25.0,Sugar:1.0(teaspoon),chilled Champagne
 Champagne Flamingo,Vodka:20.0,Campari:20.0,chilled Champagne
 Champanska,Premium Vodka:25.0,Champagne:0.5(cup),Lime Cordial:25.0,Lime Twist
@@ -254,7 +254,7 @@ Chocolate and Orange Martini,Vodka:25.0,White Crème de Cacao:12.5,Triple Sec:1.
 Chocolate Cake,Citrus Vodka:20.0,Hazelnut Liqueur:20.0,Sugar Coated Lemon
 Chocolate Kiss,Peppermint Schnapps:37.5,Coffee Liqueur:12.5,Hot Chocolate,Whipped Cream
 Chocolate Martini,Vodka:50.0,White Crème de Cacao:37.5,Hershey Hug,Powdered Cocoa
-Chocolate-covered Cherry,Baileys Cream Liqueur:30.0,Coffee Liqueur:30.0,1 Tablespoon Grenadine Syrup
+Chocolate-covered Cherry,Baileys Cream Liqueur:30.0,Coffee Liqueur:30.0,Grenadine Syrup:1.0(tablespoon)
 Choking Hazard,Whiskey:75.0,Olive Juice:1.0(splash),Dry Vermouth:1.0(dash),3 Cheese & Almond Stuffed Olives
 Christmas Jones,Vodka:25.0,Pineapple Juice:125.0,Lemon-Lime Soda,4 Strawberries,Mint Sprigs
 Chrysanthemum,Absinthe:10.0,Brandy:20.0,Dry Vermouth:50.0,Orange Peel
@@ -274,7 +274,7 @@ Colt 45,Gin:25.0,Jagermeister:50.0,Energy Drink:150.0
 Commander White,Vodka:45.0,Pineapple Juice:90.0,Lemon Juice:15.0,Tabasco Sauce:1.0(dash),Worcestershire Sauce:2.0(dash),Salt:1.0(dash),Pepper:1.0(dash),Celery Stalk
 Commodore,Rum:50.0,1 Egg White,Sugar:1.0(teaspoon),Lemon Juice:1.0(dash),Grenadine Syrup:1.0(dash),Raspberry Syrup:1.0(dash)
 Communitini,Pomegranate Vodka:37.5,Pomegranate Juice:37.5,Simple Syrup:20.0,Fresh mint:5.0,Sugar
-Comrade Collins,Vodka:50.0,Lemon Juice:25.0,drizzle of Sugar Syrup,Soda Water:1.0(splash),Lemon Slice
+Comrade Collins,Vodka:50.0,Lemon Juice:25.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash),Lemon Slice
 Cool Colada,Pineapple Vodka:25.0,Coconut Vodka:12.5,Pineapple Juice:12.5
 Coppertone,Coconut Rum:50.0,Cherry Cola:100.0,Lime Wedge
 Corn N `Oil,Cruzan Blackstrap Rum:10.0,Falernum:10.0,Lime Wedge
@@ -403,7 +403,7 @@ Gin Berry,Gin:37.5,Black Raspberry Liqueur:12.5,Cranberry Juice:37.5,Lime Juice:
 Gin Fizz,Gin:50.0,Lemon Juice:25.0,Sugar Syrup:12.5,Top-Up Soda Water,Lemon Wedge
 Gin Rickey,Gin:50.0,Lime Juice:25.0,Sugar Syrup:12.5,Soda Water,Lime wedge
 Gin Sling,Gin:37.5,Sweet Vermouth:25.0,Lemon Juice:20.0,Simple Syrup:25.0,Angostura Bitters:1.0(dash),Soda Water,Lemon Spiral
-Gin Sour,Gin:50.0,Lemon Juice:25.0,Simple Syrup:12.5,Splash Egg-White
+Gin Sour,Gin:50.0,Lemon Juice:25.0,Simple Syrup:12.5,Egg-White:1.0(splash)
 Ginger Bush,Bourbon:60.0,Ginger Beer,Wedge of Lime
 Ginger Lime Long-Tail,Mekhong:50.0,Lime Juice:12.5,Ginger Beer,Angostura Bitters:1.0(dash),3 Lime Wheels
 Ginger Martini,Vodka:37.5,Ginger Liqueur:37.5,squeeze of Lemon Juice,Lemon Twist
@@ -428,7 +428,7 @@ GoldenEye,Vodka:25.0,Amaretto:25.0,Lemon Twist
 Gong,Sake:60.0,Pama Pomegranate Liqueur:20.0
 Goober,Vodka:37.5,Black Raspberry Liqueur:37.5,Melon Liqueur:37.5,Triple Sec:25.0,Grenadine Syrup:25.0,Pineapple Juice:75.0,Orange Juice:100.0,Orange slice
 Good Luck Charm,Bourbon:37.5,Limoncello:20.0,Lemon Sour:50.0,5 Spearmint Leaves
-Grand Orange Collins,Grand Marnier:50.0,Lemon Juice:25.0,Orange Juice:25.0,drizzle of Sugar Syrup,Soda Water:1.0(splash)
+Grand Orange Collins,Grand Marnier:50.0,Lemon Juice:25.0,Orange Juice:25.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash)
 Grapefruit Daiquiri,Light Rum:37.5,Dark Rum:12.5,Grapefruit Juice:37.5,Sugar Syrup:20.0,Cherry
 Grasshopper,Crème de Menthe:20.0,Crème de Cacao:20.0,Cream:20.0
 Grateful Dead,Gin:15.0,Vodka:15.0,Tequila:15.0,White Rum:15.0,Triple Sec:15.0,Lemon Juice:25.0,Gomme syrup:30.0,Chambord:1.0(splash)
@@ -448,7 +448,7 @@ Hairy Navel,Vodka:25.0,Peach Schnapps:25.0,top-up of Orange Juice
 Halfpipe,Absinthe:25.0,Coffee Liqueur:25.0,Cream Liqueur:25.0
 Halloween Harvest Punch,Melon Liqueur:25.0,Dark Rum:25.0,Light Rum:25.0,White Cranberry Juice:50.0,Apple Juice:25.0,Simple Syrup:25.0,Juice of 1 Lemon,Apple Slices,Blueberries and Melon Balls
 Halloween Hpnotist,Hpnotiq:50.0,Premium Vodka:25.0,Lemon Juice:1.0(splash),1 Glowstick
-Hangmans Blood,Gin:50.0,Whiskey:50.0,Rum:50.0,Port:50.0,Brandy:50.0,Small Bottle of Stout Beer,Top up of Champagne.
+Hangmans Blood,Gin:50.0,Whiskey:50.0,Rum:50.0,Port:50.0,Brandy:50.0,Stout Beer:several(bottle),Top up of Champagne.
 Happy New Year,Brandy:20.0,Ruby Port:20.0,Champagne:100.0,Orange Juice:20.0
 Harrington,Green Chartreuse:4.0,Vodka:25.0,Blue Curacao:25.0,Orange Peel
 Harrogate Nights,Vodka:25.0,Peach Schnapps:12.5,Coconut Rum:12.5,Orange Juice:25.0,Pineapple Juice:25.0,Cranberry Juice:1.0(dash)
@@ -504,12 +504,12 @@ Irish Winter,Coffee Liqueur:25.0,Irish Whiskey:25.0,Freshly Brewed Coffee,Whippe
 Italian Coffee,Strega Liqueur:25.0,Hot Black Coffee,Whipped Cream,Shaved Nutmeg
 Italian Sunset,Amaretto:50.0,Orange Juice:75.0,Soda Water:75.0,Grenadine Syrup:1.0(dash)
 Ja Mora,Vodka:25.0,Black Raspberry Liqueur:12.5,Orange Juice:12.5,Apple Juice:12.5,Top-Up Champagne
-Jack Collins,Applejack:50.0,Lemon Juice:25.0,drizzle of Sugar Syrup,Soda Water:1.0(splash)
+Jack Collins,Applejack:50.0,Lemon Juice:25.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash)
 Jack O`Lantern,Cognac:25.0,Orange Juice:37.5,Ginger Ale:12.5,Orange Wheel and Lime Twist
 Jack Rose,Applejack:75.0,Lemon Juice:50.0,Grenadine Syrup:2.0(dash)
 Jager Bomb,Jagermeister:37.5,Energy Drink:100.0
 Jagertee,Spiced Rum:1.0(cup),Red Wine:1.0(cup),Black Tea:1.0(cup),Plum Brandy:1.0(cup),Orange Juice:1.0(cup),2 Sugar Cubes,1/4 of Cinnamon Stick,3 Whole Cloves,2 Lemon Slices
-Jallu Collins,Jalovinna:50.0,Lemon Juice:25.0,drizzle of Sugar Syrup,Soda Water:1.0(splash)
+Jallu Collins,Jalovinna:50.0,Lemon Juice:25.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash)
 Jamaican Coffee,Jamaican Dark Rum:50.0,Jamaican coffee:150.0,Whipped Cream:0.25(cup),pinch Ground Coffee
 Jamican Cobbler,Dark Rum:75.0,Coffee Liqueur:25.0,Raspberries
 Japanese Slipper,Melon Liqueur:25.0,Triple-Sec:25.0,Lemon Juice:25.0
@@ -520,13 +520,13 @@ Jellyfish,Vodka:37.5,Blue Curacao:37.5,White Sambuca:37.5,Cream:12.5
 Jersey Cocktail,Apple Whisky:50.0,Simple Syrup:2.0(dash),Angostura Bitters:1.0(dash)
 Jersey Flashlight,Apple Whisky:50.0,Angostura Bitters:1.0(dash),Sugar:2.0(tablespoon),Lemon Peel,Hot Water to fill
 Jersey Tea,Gin:15.0,Vodka:15.0,Tequila:15.0,White Rum:15.0,Triple Sec:15.0,Lemon Juice:25.0,Gomme syrup:30.0,Jagermeister:25.0
-Jock Collins,Scotch Whiskey:50.0,Lemon Juice:25.0,drizzle of Sugar Syrup,Soda Water:1.0(splash),maraschino cherry
+Jock Collins,Scotch Whiskey:50.0,Lemon Juice:25.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash),maraschino cherry
 John Collins,Bourbon Whiskey:50.0,Lemon Juice:25.0,Sugar Syrup:12.5,Soda Water:1.0(splash),Maraschino Cherry
 Johnny Weissmuller,Gin:25.0,Light Rum:25.0,Lemon Juice:25.0,Powdered Sugar:1.0(tablespoon),Grenadine Syrup:1.0(dash)
 Joker,Vodka:50.0,Triple Sec:50.0,Advocaat:50.0,Fizzy Orange Juice:150.0,top-up of Lemonade
-Juan Collins,Tequila:50.0,Freshley Squeezed Lemon Juice:25.0,drizzle of Sugar Syrup,Soda Water:1.0(splash)
+Juan Collins,Tequila:50.0,Freshley Squeezed Lemon Juice:25.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash)
 Jump Up and Kiss Me,Galliano:25.0,Rum:25.0,Apricot Brandy:5.0,Pineapple Juice:25.0,Lemon Juice:5.0,1 Egg White
-Just Peachy Sangria,1 Bottle White Wine,Peach Schnapps:0.5(cup),Sugar:0.5(cup),2 Sliced Peaches,1 Sliced Orange,1/2 Mango Sliced
+Just Peachy Sangria,White Wine:1.0(bottle),Peach Schnapps:0.5(cup),Sugar:0.5(cup),2 Sliced Peaches,1 Sliced Orange,1/2 Mango Sliced
 Kahlua Colada,Kahlua:30.0,Coconut Cream:30.0,Pineapple Juice:90.0,1 Pineapple Slice
 Kamikaze,Vodka:25.0,Triple Sec:25.0,Lemon Juice:25.0
 Katinka,Vodka:37.5,Apricot Brandy:12.5,Lime Juice:12.5,Mint Sprig
@@ -573,7 +573,7 @@ Lichitini,Vodka:37.5,Lychee Liqueur:37.5,Lime Juice:1.0(dash),1 Pitted Lychee
 Licorice Stick,Vodka:60.0,Sambuca Liqueur:20.0,Black Licorice Stick
 Light `N` Stormy,Light Rum:60.0,Ginger Beer,Lime Wedge
 Lime Cola,m Lime Juice:25.0,Cola to fill,Lime Wedge
-Lindsay Lohan,Jagermeister:50.0,Peach Schnapps:50.0,Cranberry Juice,Splash of Cola
+Lindsay Lohan,Jagermeister:50.0,Peach Schnapps:50.0,Cranberry Juice,Cola:1.0(splash)
 Link-Up,Vodka:25.0,Southern Comfort:25.0,Lime Juice:1.0(teaspoon)
 Liquid Bourbon Ball,Bourbon Whiskey:50.0,White Creme de Cacao:25.0,Hazelnut Liqueur:5.0,Chocolate Shavings
 Liquid Cocaine,Jagermeister:10.0,Goldschlager:10.0,Peppermint Schnapps:10.0
@@ -630,11 +630,11 @@ Merry Irishman,Irish Whiskey:40.0,Coffee Liqueur:20.0,Mint Schnapps:10.0,Candy C
 Metropolitan,Brandy:60.0,Sweet Red Vermouth:20.0,Angostura Bitters:1.0(dash)
 Mex-tini,Orange Vodka:25.0,Tequila:25.0,Orange Juice:12.5,Orange Slice
 Mexican Martini,Tequila:50.0,Pineapple Juice:50.0,Black Raspberry Liqueur:5.0
-Mexican Mojito,Tequila:40.0,Lime Juice:30.0, 3 Mint Leaves ,Simple Syrup:5.0,Splash of Soda Water
+Mexican Mojito,Tequila:40.0,Lime Juice:30.0, 3 Mint Leaves ,Simple Syrup:5.0,Soda Water:1.0(splash)
 Mexican Surfer,Tequila:25.0,Pineapple Juice:37.5,Lime Cordial:37.5
-Mezcal Passion,Mezcal:37.5,Lime Juice:20.0,Passion Fruit Puree:20.0,3 Muddled Cucumber Slices,1 barspoon Agave Nectar,Ginger Beer:25.0,Cucumber Slice,pinch of Ground Chilli
+Mezcal Passion,Mezcal:37.5,Lime Juice:20.0,Passion Fruit Puree:20.0,3 Muddled Cucumber Slices,Agave Nectar:1.0(bar spoon),Ginger Beer:25.0,Cucumber Slice,pinch of Ground Chilli
 Miami Iced Tea,Vodka:12.5,Light Rum:12.5,Gin:12.5,Peach Schnapps:12.5,Triple Sec:12.5,Sour Mix:25.0,Cranberry Juice:25.0,Lemon-Lime Soda:1.0(splash)
-Michael Collins,Irish Whiskey:50.0,Lemon Juice:25.0,drizzle of Sugar Syrup,Soda Water:1.0(splash)
+Michael Collins,Irish Whiskey:50.0,Lemon Juice:25.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash)
 Michelada,Beer:300.0,juice from 1 Lemon,Worcestershire Sauce:2.0(dash),Soy Sauce:1.0(dash),Tabasco Sauce:1.0(dash),1 pinch Black Pepper
 Michigan Iced Tea,Gin:15.0,Vodka:15.0,Tequila:15.0,White Rum:15.0,Triple Sec:15.0,Lemon Juice:25.0,Gomme syrup:30.0,Ginger Ale:1.0(splash)
 Midnight Martini,Coffee Vodka:80.0,Coffee Liqueur:5.0,Lemon Twist
@@ -647,15 +647,15 @@ Mimosa,Champagne:75.0,Orange Juice:75.0
 Mind Eraser,Vodka:25.0,Coffee Liqueur:25.0,Soda Water,Lime Wedge
 Minnehaha,Gin:37.5,Sweet Vermouth:20.0,Dry Vermouth:20.0,Orange Juice:5.0
 Mint and Honey Daiquiri,Light Rum:50.0,Lime Juice:12.5,2 spoons of Runny Honey,3 Mint Leaves
-Mint Julep,Knob Creek Bourbon:50.0,bar spoon Granulated Sugar,8 Mint leaves,Mint sprigs
+Mint Julep,Knob Creek Bourbon:50.0,Granulated Sugar:1.0(bar spoon),8 Mint leaves,Mint sprigs
 Missouri Mule,Bourbon Whiskey:50.0,Applejack:50.0,Campari:25.0,Triple Sec:25.0,Lemon Juice:50.0
 Mistletoe Martini,Vodka:50.0,Orange Juice:50.0,Chilled Cranberry Tea:75.0,Lemon Juice:20.0,Sugar:3.0(teaspoon)
 Misty Maple Leaf,Canadian Mist Whiskey:50.0,Maple Syrup:12.5,Soda Water:1.0(splash)
 Misty Pear,Canadian Mist Whiskey:100.0,Pear Nectar:75.0,Peach Nectar:25.0,Lime juice:25.0,Asian Pear
 Mochatini,Coffee Liqueur:25.0,Chocolate Liqueur:12.5,Vanilla Vodka:25.0,White Chocolate and Sugar
-Modern English,Gin:65.0,Pear Nectar:25.0,Maple Syrup:12.5,Lemon Juice:12.5,1 bar spoon Goldschlager,Cinnamon Stick
+Modern English,Gin:65.0,Pear Nectar:25.0,Maple Syrup:12.5,Lemon Juice:12.5,Goldschlager:1.0(bar spoon),Cinnamon Stick
 Mojito,White Rum:50.0,8 Mint leaves,Sugar Syrup:12.5,Lime Juice:25.0,2 Mint sprigs
-Mojito Royal,White Rum:40.0,Lime Juice:30.0, 3 Mint Leaves,Sugar:2.0(teaspoon),Splash of Champagne
+Mojito Royal,White Rum:40.0,Lime Juice:30.0, 3 Mint Leaves,Sugar:2.0(teaspoon),Champagne:1.0(splash)
 Moloko Plus,Absinthe:25.0,Anisette Liqueur:25.0,Irish Cream Liqueur:50.0,Milk:125.0,Sugar:1.0(tablespoon)
 Momotaro,Gin:50.0,Peach Puree:50.0,Lemon Juice:12.5,Sugar Syrup:5.0
 Monte Carlo,Rye Whiskey:50.0,Benedictine:20.0,Angostura Bitters:1.0(dash)
@@ -688,7 +688,7 @@ Obituary Cocktail,Gin:50.0,Dry Vermouth:5.0,Absinthe:5.0,
 October Screwdriver,Blavod Black vodka:75.0,Orange Juice:75.0
 Old Cuban,Light Rum:37.5,Dark Rum:12.5,Lime Juice:20.0,Sugar Syrup:12.5,8 Mint Leaves,Old-Fashioned Bitters:1.0(dash),Top-Up Champagne.
 Old Etonian,Gin:37.5,Lillet blanc:37.5,Crème de Noyaux:2.0(dash),Orange Bitters:2.0(dash)
-Old Fashioned,Bourbon:50.0,Angostura Bitters:2.0(dash),Orange Bitters:1.0(dash),1 bar spoon Sugar,Orange peel
+Old Fashioned,Bourbon:50.0,Angostura Bitters:2.0(dash),Orange Bitters:1.0(dash),Sugar:1.0(bar spoon),Orange peel
 Old Lay,Gold Tequila:30.0,Triple Sec:20.0,Lime Juice:1.0(splash),Grenadine Syrup
 Old Pal,Canadian whiskey:25.0,Dry Vermouth:25.0,Campari:25.0
 One Balled Dictator,Liebfraumilch:100.0,Champagne:20.0,1 Cinnamon Ball
@@ -735,7 +735,7 @@ Peppermint Kiss,Melon Liqueur:25.0,Vodka:25.0,Pineapple Juice:75.0,Lemon Juice:5
 Perfect Manhattan,Rye Whiskey:50.0,Sweet Red Vermouth:10.0,Dry Vermouth:10.0,Angostura Bitters:1.0(dash)
 Perfect Storm,Grand Marnier:37.5,Lime Juice:12.5,Ginger Beer:75.0,3 drops Angostura Bitters,Lime Wedge
 Perroquet,Pastis:37.5,Mint Liqueur:1.0(dash),Water
-Phil Collins,Lemon-Lime Soda:100.0,Freshly Squeezed Lemon Juice:50.0,drizzle of Sugar Syrup,Soda Water:1.0(splash)
+Phil Collins,Lemon-Lime Soda:100.0,Freshly Squeezed Lemon Juice:50.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash)
 Pina Colada,White Rum:50.0,Pineapple Juice:100.0,Coconut Cream:25.0,Cream:25.0,Pineapple Slice,pinch of Salt
 Pina Martini,Vodka:50.0,Pineapple Juice:45.0,Lime Juice:5.0,Sugar Syrup:1.0(dash)
 Pineapple Mojito,Rum:75.0,Triple Sec:25.0,Pineapple Juice:25.0,2 slices Pineapple,4 Lime Wedges,6 Mint Leaves,Mint Sprig
@@ -754,16 +754,16 @@ Pinky Pincher,Bourbon Whiskey:50.0,Orange Juice:37.5,Lemon Juice:25.0,Orgeat Syr
 Pirates Treasure,Goldschlager:20.0,Spiced Rum:20.0
 Pisco Sour,Pisco:50.0,Simple Syrup:12.5,Lime Juice:25.0,Egg White:1.0(splash),Lime wedge
 Pixie Stick,Gin:37.5,Melon Liqueur:37.5,top-up Lemon-Lime soda
-Planters Punch,Dark Rum:50.0,Lime Juice:30.0,Grenadine Syrup:10.0,Sugar Syrup:15.0,Splash of Soda Water,Angostura Bitters:2.0(dash)
+Planters Punch,Dark Rum:50.0,Lime Juice:30.0,Grenadine Syrup:10.0,Sugar Syrup:15.0,Soda Water:1.0(splash),Angostura Bitters:2.0(dash)
 Playa Del Mar,Tequila:25.0,Triple Sec:12.5,Cranberry Juice:25.0,Pineapple Juice:20.0,Lime Juice:12.5,Sugar Syrup:5.0
-Plum & Vanilla Fizz,Gin:37.5,Double Cream:25.0,Plum and Vanilla Purée:25.0,Lemon Juice:12.5,Full Egg White,Dash of Soda
+Plum & Vanilla Fizz,Gin:37.5,Double Cream:25.0,Plum and Vanilla Purée:25.0,Lemon Juice:12.5,Full Egg White,Soda:1.0(dash)
 Poinsettia,Triple Sec:12.5,Champagne,Cranberry Juice:75.0
 Polar Bear Cooler,Dark Rum:50.0,Red Vermouth:25.0,Lime Juice:25.0,Lemon-Lime Soda:90.0
 Polar Bear Drink,Vodka:25.0,Blue Curacao:25.0,top-up Lemon-Lime Soda
 Polar Bear in Blizzard,White Crème de Cacao:25.0,Peppermint Schnapps:25.0,Vodka:25.0
 Polished Princess,Vanilla Vodka:37.5,5 Cranberries,pinch Pumpkin Spice,Lemon Juice:12.5,Simple Syrup:20.0,1 Egg White
 Pomegranate – Pineapple Fireworks,Pomegranate Vodka:12.5,Pineapple Vodka:12.5,Pineapple Juice:12.5,Champagne
-Pomegranate Gin Fizz,Gin:50.0,Pomegranate Liqueur:12.5,juice from 1/2 Lime,1 bar spoon Lavendar Simple Syrup,1 Egg White,Soda Water
+Pomegranate Gin Fizz,Gin:50.0,Pomegranate Liqueur:12.5,juice from 1/2 Lime,Lavendar Simple Syrup:1.0(bar spoon),1 Egg White,Soda Water
 Pomegranate Poinsettia,Pomegranate Liqueur:25.0,Orange-Flavoured Liqueur:25.0,Orange Juice:25.0,Champagne:75.0
 Pompanski Martini,Vodka:45.0,Triple Sec:12.5,Grapefruit Juice:37.5,Sugar Syrup:5.0,Dry Vermouth:1.0(dash)
 Pomspresso Tini,Espresso Vodka:50.0,Pomegranate Juice:25.0,Lime Juice:1.0(splash),Angostura Bitters:2.0(dash)
@@ -816,7 +816,7 @@ Roasted Toasty,Cinnamon Schnapps:10.0,Amaretto:10.0,Coffee Liqueur:10.0
 Rob Burns,Scotch whiskey:50.0,Sweet Vermouth:20.0,Orange Bitters:1.0(dash),Absinthe:1.0(dash)
 Rob Roy,Scotch Whisky:50.0,Sweet Red Vermouth:20.0,Angostura Bitters:1.0(dash)
 Rock Lobster,Coconut Rum:25.0,Banana Liqueur:12.5,Grenadine Syrup:1.0(dash),1/2 ripe banana,Pineapple Juice:1.0(dash),Orange Juice:1.0(dash),Dark Rum to top
-Ron Collins,Rum:50.0,Lemon Juice:25.0,drizzle of Sugar Syrup,Soda Water:1.0(splash)
+Ron Collins,Rum:50.0,Lemon Juice:25.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash)
 Root Beer Float,Galliano:25.0,Vanilla Liqueur:25.0,Cream:25.0,Root Beer to fill,Whipped Cream,Cherry
 Rosabel,Sweet Vermouth:20.0,Crème de Cassis:20.0,Prosecco:1.0(splash)
 Rose,Gin:37.5,Dry Vermouth:12.5,Cherry Brandy:12.5
@@ -827,7 +827,7 @@ Rosemary,Bourbon Whiskey:37.5,Dry Vermouth:37.5,Rosemary Sprig
 Rosemary Mac,Scotch Whiskey:37.5,Sweet Red Vermouth:37.5, Rosemary Sprig
 Rossini,Strawberry Puree:37.5,Top-Up Champagne
 Rosy Dawn,Gin:20.0,Cherry Brandy:20.0,Triple Sec:20.0,Lime Juice:20.0,Cherry
-Rosy Rum Cosmo,Limon Rum:37.5,Triple Sec:12.5,1 Tablespoon Lime Juice,Cranbery Juice:1.0(tablespoon),Fresh Mint Leaves
+Rosy Rum Cosmo,Limon Rum:37.5,Triple Sec:12.5,Lime Juice:1.0(tablespoon),Cranbery Juice:1.0(tablespoon),Fresh Mint Leaves
 Rourou,Pastis:25.0,Strawberry Syrup:10.0
 Roy Rogers,cola:150.0,Grenadine Syrup:5.0,Maraschinio Cherry
 Royal Arrival,Gin:50.0,Creme de Noyaux:12.5,Kummel:12.5,Lemon Juice:12.5,Egg White:1.0(dash),Vegetable Extract:1.0(dash)
@@ -846,7 +846,7 @@ Rum Cocktail,Light Rum:50.0,Lime Juice:12.5,Grenadine Syrup:5.0,Sugar Syrup:1.0(
 Rum Punch,Light Rum:2.0(shot),Orange Juice:3.0(shot),Lime Juice:1.0(shot),Sugar Syrup:0.5(shot),Top-Up Lemonade
 Rum Runner,Aged Rum:37.5,White Rum:20.0,Creme de Banane:12.5,Creme de Mure:12.5,Pineapple Juice:15.0,Orange Juice:15.0,Orange slice
 Rum Swizzle,Goslings Black Seal Rum:100.0,Goslings Barbados Rum:50.0,juice of 2 Lemons,pineapple juice:125.0,orange juice:125.0,Bermuda  falernum:50.0,Angostura Bitters:6.0(dash)
-Russell Collins,Jagermeister:30.0,Lemon Juice:15.0,drizzle of Sugar Syrup,Soda Water:1.0(splash)
+Russell Collins,Jagermeister:30.0,Lemon Juice:15.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash)
 Russian Quaalude,Hazelnut Liqueur:25.0,Irish Cream Liqueur:25.0,Vodka:25.0
 Russian Spring Punch,Vodka:25.0,Black Raspberry Liqueur:5.0,Lemon Juice:25.0,Sugar Syrup:5.0,Top-Up Champagne,Mixed Berries
 Russian Sunrise,Vodka:45.0,Orange Juice:90.0,Grenadine Syrup:15.0,Orange Slice
@@ -883,7 +883,7 @@ Shady Grove Cooler,Gin:50.0,Lime Juice:25.0,Sugar Syrup:5.0,Top-Up Ginger Ale,Li
 Shamrock Shaker,Coffee Liqueur:37.5,Milk:70.0,Amaretto:12.5,Edible Green & Gold Powder
 Shamrock Smoothie,Melon Vodka:50.0,Triple Sec:12.5,Orange Curacao:1.0(splash),juice of 2 Limes
 Shamrocked,Melon Liqueur:50.0,Irish Whiskey:12.5,Irish Cream Liqueur:12.5
-Sherron Collins,Gin:30.0,Lemon Juice:15.0,drizzle of Sugar Syrup,Soda Water:1.0(splash),Orange Juice:1.0(splash)
+Sherron Collins,Gin:30.0,Lemon Juice:15.0,Sugar Syrup:1.0(drizzle),Soda Water:1.0(splash),Orange Juice:1.0(splash)
 Sherry Cobbler,Sherry:100.0,Simple Syrup:12.5,3 Orange Slices,6 Blueberries
 Shirley Temple,Ginger Ale:100.0,Orange Juice:50.0,Grenadine Syrup:1.0(splash),Maraschino Cherry
 SideCar,Cognac:37.5,Triple Sec:12.5,Lemon Juice:20.0,Egg White:1.0(dash),Sugar Syrup:5.0,Orange peel
@@ -941,7 +941,7 @@ Surfer On Acid,Coconut Rum:25.0,Jagermeister:25.0,Pineapple Juice
 Sweet City,Gin:25.0,Vermouth:25.0,Apricot Brandy:25.0,Orange Zest
 Sweet Sunrise,Orange Juice:100.0,Grenadine Syrup:1.0(dash),Orange Slice
 Tall Black Russian,Vodka:50.0,Coffee Liqueur and splash of Cola:20.0
-Tamagozake,Sake:0.75(cup),drizzle of Honey,1 raw Egg Yolk
+Tamagozake,Sake:0.75(cup),Honey:1.0(drizzle),1 raw Egg Yolk
 Tangerine Margarita,Tequila:50.0,Orange Liqueur:25.0,Lime Juice:12.5,Tangerine Juice:12.5,Salt
 Tartini,Raspberry Vodka:50.0,Black Raspberry Liqueur:12.5,Cranberry Juice:37.5,12 Raspberries
 Teachers Pet,Scotch Whiskey:25.0,Coffee Liqueur:25.0,Milk
@@ -974,7 +974,7 @@ Tiger Tail,Coffee Liqueur:10.0,Orange Liqueur:10.0,Peppermint Schnapps:10.0
 Tijuana Manhattan,Tequila:50.0,Sweet Red Vermouth:20.0,Angostura Bitters:1.0(dash)
 Tiki Bar Margarita,Tequila:50.0,Lime Juice:25.0,Almond Sugar Syrup:12.5,Pineapple Wedge
 Toasted Almond,Amaretto:37.5,Coffee Liqueur:37.5,Cream:25.0
-Toblerone Martini,Baileys Irish Cream:25.0,Kahlua:12.5,Frangelica:12.5,Dash of Honey,Cream:25.0,Milk:25.0,Chocolate Powder
+Toblerone Martini,Baileys Irish Cream:25.0,Kahlua:12.5,Frangelica:12.5,Honey:1.0(dash),Cream:25.0,Milk:25.0,Chocolate Powder
 Tokyo Iced Tea,Gin:15.0,Vodka:15.0,Tequila:15.0,White Rum:15.0,Melon Liqueur:15.0,Lemon Juice:25.0,Gomme syrup:30.0,Lemon-Lime Soda:1.0(splash)
 Tom & Jerry,Brandy:1.0(dash),Rum:12.5,1 whole Egg White,1 whole Egg Yolk,Sugar:1.0(teaspoon)
 Tom Collins,Gin:37.5,Lemon Juice:25.0,Sugar Syrup:12.5,Soda Water:1.0(splash)
@@ -991,7 +991,7 @@ Tropical Cooler,Pomegranate Liqueur:37.5,Melon Liqueur:25.0,spoonful of Coconut 
 Twilight Dove,Cranberry Juice:25.0,Grape Juice:75.0,Agave Nectar:1.0(teaspoon),Lavendar Soda
 T`n`T,Tequila:50.0,Tonic Water:100.0
 U-Boot,Beer:565.0,Vodka:25.0
-Ultra Violet,Tanqueray Gin:25.0,Suave Pomegranate Liqueur:12.5,Lejay Parfait Amour:12.5,Elderflower Cordial:5.0,Lemon Juice:25.0,Dash of Gomme Syrup,6 muddled Rosemary Leaves,Lemon Twist
+Ultra Violet,Tanqueray Gin:25.0,Suave Pomegranate Liqueur:12.5,Lejay Parfait Amour:12.5,Elderflower Cordial:5.0,Lemon Juice:25.0,Gomme Syrup:1.0(dash),6 muddled Rosemary Leaves,Lemon Twist
 Un-Goa,Tequila:12.5,White Rum:12.5,Lime Juice:1.0(dash)
 Union Square,Gin:50.0,2 1/2 Strawberries,Basil sprigs,Lime Juice:12.5,Lemon Juice:12.5,Agave Nectar:25.0
 Va Va Voom,Triple Sec:12.5,Lemon Juice:20.0,Sugar Syrup:12.5,top up Champagne
@@ -1038,7 +1038,7 @@ Widows Cork,Jameson Irish Whiskey:50.0,Amaretto:25.0
 Winter Cocktail,Rum:50.0,juice of 1/2 Lime,Sugar:1.0(teaspoon),Ginger Liqueur:1.0(teaspoon),Pimento Dram:1.0(teaspoon),Angostura Bitters:2.0(dash)
 Witch Doctor,Dark Rum:50.0,Dr.Pepper:100.0,Lime Wedge
 Witch Hunt,Scotch Whisky:50.0,Dry Vermouth:25.0,Strega Liquer:10.0,Lemonade:50.0
-Wolf Bite,Absinthe:50.0,Melon Liqueur:50.0,Lemon-Lime Soda:50.0,Pineapple Juice:37.5,drizzle of Grenadine Syrup
+Wolf Bite,Absinthe:50.0,Melon Liqueur:50.0,Lemon-Lime Soda:50.0,Pineapple Juice:37.5,Grenadine Syrup:1.0(drizzle)
 WooWoo,Peach Schnapps:37.5,Vodka:37.5,Cranberry Juice:90.0
 Xalapa Punch,Hot Black Tea:2.0(cup),Honey:1.0(cup),Amber Rum:1000.0,Apple Brandy:1000.0,Dry Red Wine:1000.0,Oranges,Lemons
 Yaka Hula Hickey Dula,Dark Rum:37.5,Dry Vermouth:37.5,Pineapple Juice:37.5,Pineapple Chunk
@@ -1059,4 +1059,4 @@ Zipper,Grand Marnier:10.0,ounce Tequila:10.0,Irish Cream Liqueur:10.0
 Zipperhead,Vodka:30.0,Chambord:30.0,Lemon-Lime Soda:30.0
 Zombie,Gold Rum:37.5,White Rum:25.0,Dark Rum:25.0,151 proof Rum:1.0(splash),Apricot Brandy:12.5,Simple Syrup:12.5,Pineapple Juice:37.5,Lime Juice:25.0,Mint sprig and Orange wedge
 Zorbatini,Vodka:37.5,Ouzo:37.5,Greek Olive
-Zurracapote,1 Bottle Red Wine ,1 Cinnamon Stick ,Brown Sugar:1.0(cup),1 Lemon Peel,4 ounces Dried Plums,4 ounces Raisins,10 ounces Dried Peaches
+Zurracapote,Red Wine:1.0(bottle),1 Cinnamon Stick ,Brown Sugar:1.0(cup),1 Lemon Peel,4 ounces Dried Plums,4 ounces Raisins,10 ounces Dried Peaches

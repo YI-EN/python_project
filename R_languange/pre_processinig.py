@@ -1,5 +1,7 @@
+'''
+從網站上下載資料，將其轉成表格，並保留溶液成分單位
+'''
 import requests
-
 import re
 
 # 複製網址，分兩次只是為了比較好看而已
@@ -9,17 +11,9 @@ r = requests.get(url)  # 用 requests.get() 取得網址資料
 
 if r.status_code == requests.codes.ok:
 	print("OK!")  # 確認網址運作正常（給爬）
-# print(r.text)
-
-
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(r.text, "html.parser")  # 準備用bs4爬蟲
-# print(soup.prettify())
-
 title_tag = soup.title  # 沒啥用，看一下title而已，可忽略～
-# print(title_tag)
-# print(title_tag.string)
-
 
 # 收集調酒的名字 ex:「long island iced tea」
 # 每頁應該要有 30 種調酒，共有 36 頁，不過最後一頁只有 22 種調酒
@@ -47,7 +41,6 @@ ingredient_lists = []
 for ingredient_list in ingredient_tags:
 	i = ingredient_list.get_text(",").strip().split(",")  # 注意這裡是用get_text(",")
 	# print(i)											  # 而不是get_text()，不懂者可問谷歌大神
-	# print("==========")
 	ingredient_lists.append(i) # 將每種調酒的食材列成一個 list
 # print(ingredient_lists)
 
@@ -81,7 +74,7 @@ def split_ingredient_by_plural(unit, base):
 	return liquid_name_and_amount
 
 
-def split_ingredient_by_single(unit,base):
+def split_ingredient_by_single(unit, base):
 	
 	base = base.split(unit)
 	amount = 1.0
@@ -92,9 +85,10 @@ def split_ingredient_by_single(unit,base):
 	else:
 		liquid_name = base[1].strip()
 	
-	liquid_name_and_amount = [liquid_name, str(amount) + "(" + unit + ")"]
+	liquid_name_and_amount = [liquid_name, str(amount) + "(" + unit.lower() + ")"]
 
-	return liquid_name_and_amount	
+	return liquid_name_and_amount
+
 
 # 準備結構化資料
 adjusted_ingredient_lists = []
@@ -128,6 +122,10 @@ for ingredient_list in ingredient_lists:  # 調酒
 			unit = "dash"
 			liquid_name_and_amount = split_ingredient_by_single(unit, base)
 		
+		elif "Dash" in base:
+				unit = "Dash"
+				liquid_name_and_amount = split_ingredient_by_single(unit, base)
+		
 		elif "teaspoons" in base:
 			unit = "teaspoons"
 			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
@@ -157,15 +155,19 @@ for ingredient_list in ingredient_lists:  # 調酒
 			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
 			liquid_name_and_amount[1] += "(bottle)"
 
-		elif "splashes" in base:
-			unit = "splashes"
+		elif "Bottle" in base:
+			unit = "Bottle"
 			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
-			liquid_name_and_amount[1] += "(splash)"
+			liquid_name_and_amount[1] += "(bottle)"
 
 		elif "splash" in base:
 			unit = "splash"
 			liquid_name_and_amount = split_ingredient_by_single(unit, base)
 
+		elif "Splash" in base:
+			unit = "Splash"
+			liquid_name_and_amount = split_ingredient_by_single(unit, base)
+		
 		elif "tablespoons" in base:
 			unit = "tablespoons"
 			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
@@ -173,6 +175,10 @@ for ingredient_list in ingredient_lists:  # 調酒
 
 		elif "tablespoon" in base:
 			unit = "tablespoon"
+			liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+		elif "Tablespoon" in base:
+			unit = "Tablespoon"
 			liquid_name_and_amount = split_ingredient_by_single(unit, base)
 
 		elif "shots" in base:
@@ -191,6 +197,11 @@ for ingredient_list in ingredient_lists:  # 調酒
 
 		elif "bar spoons" in base:
 			unit = "bar spoons"
+			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+			liquid_name_and_amount[1] += "(bar spoon)"
+
+		elif "barspoon" in base:
+			unit = "barspoon"
 			liquid_name_and_amount = split_ingredient_by_plural(unit, base)
 			liquid_name_and_amount[1] += "(bar spoon)"
 
@@ -232,7 +243,7 @@ for ingredient_list in ingredient_lists:  # 調酒
 
 
 # 輸出成csv檔案（這只是第一頁喔！）
-with open("cocktails.csv", "w", encoding="utf-8") as fh1:
+with open("pre_processing.csv", "w", encoding="utf-8") as fh1:
 
 	fh1.write("cocktails_name,ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5,ingredient_6,ingredient_7,ingredient_8,ingredient_9,ingredient_10,ingredient_11,ingredient_12\n")
 
@@ -308,6 +319,10 @@ for page in range(2, 37):
 			elif "dash" in base:
 				unit = "dash"
 				liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+			elif "Dash" in base:
+				unit = "Dash"
+				liquid_name_and_amount = split_ingredient_by_single(unit, base)
 			
 			elif "teaspoons" in base:
 				unit = "teaspoons"
@@ -342,14 +357,18 @@ for page in range(2, 37):
 				unit = "bottle"
 				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
 				liquid_name_and_amount[1] += "(bottle)"
-			
-			elif "splashes" in base:
-				unit = "splashes"
-				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
-				liquid_name_and_amount[1] += "(splash)"
 
+			elif "Bottle" in base:
+				unit = "Bottle"
+				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+				liquid_name_and_amount[1] += "(bottle)"
+			
 			elif "splash" in base:
 				unit = "splash"
+				liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+			elif "Splash" in base:
+				unit = "Splash"
 				liquid_name_and_amount = split_ingredient_by_single(unit, base)
 
 			elif "tablespoons" in base:
@@ -361,6 +380,10 @@ for page in range(2, 37):
 				unit = "tablespoon"
 				liquid_name_and_amount = split_ingredient_by_single(unit, base)
 
+			elif "Tablespoon" in base:
+				unit = "Tablespoon"
+				liquid_name_and_amount = split_ingredient_by_single(unit, base)
+			
 			elif "shots" in base:
 				unit = "shots"
 				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
@@ -380,7 +403,12 @@ for page in range(2, 37):
 				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
 				liquid_name_and_amount[1] += "(bar spoon)"
 
-			elif "bars poon" in base:
+			elif "barspoon" in base:
+				unit = "barspoon"
+				liquid_name_and_amount = split_ingredient_by_plural(unit, base)
+				liquid_name_and_amount[1] += "(bar spoon)"
+			
+			elif "bar spoon" in base:
 				unit = "bar spoon"
 				liquid_name_and_amount = split_ingredient_by_single(unit, base)
 
@@ -397,6 +425,11 @@ for page in range(2, 37):
 			elif "can" in base:
 				unit = "can"
 				liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
+			elif "drizzle" in base:
+				unit = "drizzle"
+				liquid_name_and_amount = split_ingredient_by_single(unit, base)
+
 			# elif match != None:
    # 				items = match.groups()
    # 				liquid_name = items[1].strip()
@@ -410,7 +443,7 @@ for page in range(2, 37):
 
 		adjusted_ingredient_lists.append(base_list)
 
-	with open("cocktails.csv", "a", encoding="utf-8") as fh1:
+	with open("pre_processing.csv", "a", encoding="utf-8") as fh1:
 		for i in range(len(names)):
 
 			ingredient_str = ""
@@ -423,55 +456,4 @@ for page in range(2, 37):
 			print(ingredient_str)
 			fh1.write(names[i] + ingredient_str + "\n")
 		fh1.close()
-
-
-
 #======================================================================================
-# def split_ingredient_by_plural(unit, base):
-# 	base = base.split(unit)
-# 	amount_str = base[0].strip().split(" ")
-
-# 	amount = 0
-# 	if len(amount_str) == 1:
-# 		try:
-# 			amount = float(amount_str[0])
-# 		except ValueError:
-# 			if "/" in amount_str[0]:
-# 				num = int(amount_str[0].split("/")[0])
-# 				den = int(amount_str[0].split("/")[1])
-# 				amount = float(num / den)
-# 			else:
-# 				amount = "several"
-# 	elif len(amount_str) == 2:
-# 		amount = float(amount_str[0]) + 0.5
-	
-# 	if "of " in base[1].strip():
-# 		liquid_name = base[1].strip()
-# 		liquid_name = liquid_name[3: ]
-# 	else:
-# 		liquid_name = base[1].strip()
-	
-# 	liquid_name_and_amount = [liquid_name, str(amount)]
-
-# 	return liquid_name_and_amount
-
-
-# def split_ingredient_by_single(unit,base):
-	
-# 	base = base.split(unit)
-# 	amount = 1.0
-
-# 	if "of " in base[1].strip():
-# 		liquid_name = base[1].strip()
-# 		liquid_name = liquid_name[3: ]
-# 	else:
-# 		liquid_name = base[1].strip()
-	
-# 	liquid_name_and_amount = [liquid_name, str(amount) + "(" + unit + ")"]
-
-# 	return liquid_name_and_amount
-
-# base = "1/2 cup sugar"
-# unit = "cup"
-# print(split_ingredient_by_plural(unit, base))
-

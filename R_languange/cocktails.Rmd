@@ -1,0 +1,107 @@
+---
+title: "cocktails"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r}
+table %>% filter()
+
+```
+```{r}
+library(httr)
+library(xml2)
+library(rvest)
+req <- GET("https://www.socialandcocktail.co.uk",
+                    path = "alcohol")
+req[["url"]]
+req[["status_code"]]
+html <- content(req)
+
+liquor_name <- html %>% html_nodes("ul.open-chooser > li > a") %>% html_text()
+liquor_name
+
+alcohol_content <- vector("numeric", length = 259)
+
+liquor_table <- data_frame(liquor_names = liquor_name, alcohol_contents = alcohol_content)
+liquor_table
+
+write.csv(liquor_table, file = "liquor_table.csv", row.names = F, na = " ", sep = ",")
+```
+
+
+```{r}
+library(dplyr)
+library(tidyverse)
+library(stringr)
+
+fh1 <- read.csv("liquor_table.csv")
+fh2 <- read.csv("missed.csv")
+missed <- fh2 %>% 
+  mutate("TorF" = fh2$ABV > 0) %>%
+  filter(TorF == TRUE) %>%
+  mutate("Capital" = str_detect(X, "^[A-Z][a-z ]+")) %>%
+  filter(Capital == TRUE) %>% 
+  select(X, ABV)
+missed
+write.csv(missed, "adjusted_missed.csv", row.names = F, col.names = F)
+
+```
+
+```{r}
+library(dplyr)
+library(tidyverse)
+library(stringr)
+
+# 解決 whisky 和 whiskey 的問題
+
+liquor_table <- read.csv("liquor_table.csv")
+liquor_table <- as_tibble(liquor_table)
+whiskey <- liquor_table %>% filter(str_detect(liquor_names, "Whiskey"))
+write.csv(whiskey, "whiskey.csv", row.names = F)
+
+
+```
+
+
+```{r}
+library(dplyr)
+library(tidyverse)
+library(stringr)
+library(tibble)
+
+fh1 <- read.csv("pre_processing.csv")
+fh2 <- read.csv("abv_involved.csv")
+as_tibble(fh1)
+as_tibble(fh2)
+
+fh1 <- fh1 %>%
+  mutate("abv" = fh2$alcohol_concentration...) %>%
+  mutate("volume(ml)" = fh2$total_volume.ml.)
+
+delete_set <- c(6, 15, 16, 23, 34, 44, 104, 107, 114, 127, 128, 132, 137, 163, 169, 171, 179, 204, 205, 226
+, 233, 234, 239, 242, 243, 247, 254, 256, 258, 280, 286, 289, 291, 296, 303, 306, 310, 314, 318, 324, 329, 336, 340, 342, 349, 352, 369, 373, 383, 388, 402, 406, 407, 408, 414, 421, 436, 446, 464, 466, 469, 474, 476, 489, 490, 500, 502, 528, 532, 534, 536, 548, 554, 555, 568, 573, 574, 575, 582, 584, 585, 589, 599, 605, 617, 624, 627, 640, 641, 643, 644, 646, 661, 665, 681, 690, 696, 699, 701, 730, 736, 745, 755, 761, 764, 765, 778, 779, 789, 796, 805, 809, 819, 829, 847, 868, 871, 880, 881, 883, 893, 898, 899, 914, 918, 922, 923, 928, 932, 935, 938, 939, 942, 946, 968, 969, 981, 982, 989, 990, 996, 1000, 1001, 1002, 1008, 1016, 1023, 1024, 1029, 1046, 1050, 1057, 1061)
+
+clean_fh1 <- fh1[-delete_set, ]
+non_alcoholic <- clean_fh1 %>% filter(abv == 0)
+write.csv(clean_fh1, "clean_fh1.csv")
+
+
+```
